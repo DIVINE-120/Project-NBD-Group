@@ -1,18 +1,19 @@
 import React from "react";
-import "../App.css";
-import App from "../App";
+import "../navbar.css";
+// import App from "../App";
 import Logo from "../assets/favicon.png"; 
-
-function Navbar() {
+const Navbar=()=> {
     return(   
+        <>
           
 <div className="byiza">
+    <h1 className="nel"></h1>
      <img src={Logo} alt="logo" className="logo-img"/> 
     <div className="divine">
 
 <ul className="nav-links">
                    <li>
-                       <a href="home" className="nav-link">
+                       <a href="/Home" className="nav-link">
                            Home
                            </a></li>
                            <li><a href="aboutus" className="nav-link">
@@ -31,6 +32,8 @@ function Navbar() {
                                    
 </div>
 </div>
+
+</>
   );   
 }
 export default Navbar;  
