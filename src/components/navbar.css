@@ -5,111 +5,89 @@
 }
 
 .logo-img{
-  width: 150px;
-  height: 80px;
+  width: 50%;
+  height: 30%;
  position: absolute;
- left: -2rem;
+ left: 12rem;
  padding-left: 3rem;
- top: 2rem;
+ top: 3rem;
  padding-bottom: 0.1rem;
 
 }
-.footer{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  background:black;
-  align-items: center;
-  height: 1.5rem;
+
+.loginform{
+  width: 50%;
+  height: 100vh;
   position: absolute;
-  top: 0rem;
-
+  left: 42.5rem;
+  top: 0;
+  box-shadow: 2px 1px 13px black;
+  background:white; 
 }
-.byiza{
-  display: flex;
-  width: 100%;
-  background:white;
-  align-items: center;
-  height: 3rem;
-  padding-top: 7rem;
-   box-shadow: 20px 3px black;
-  
-}
-
-.nav-links{
-  display: flex;
-  padding: 1rem;
-  padding-left: 5rem;
+h1{
   position: absolute;
-   list-style-type: none;
-   gap:2rem;
-  left: 45rem;
-  top: 3rem;
- 
-  
-}
-
-.nav-link:link,.nav-link:visited{
-  font-size: 1.2rem;
-  text-decoration: none;
+  top: 17rem;
+  left: 18rem;
+  font-style: bold;
   color: black;
 }
-
-
-.watching{
-  width: 60%;
+.form1{
+  width: 50%;
   height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
  
-  
+  background: #3CB5C6; 
 }
-.loginform{
-  width: 40%;
-  height: 100vh;
-  position: absolute;
-  left: 51rem;
-  top: 7rem;
-  background-color: white;
-}
-.logoform{
-  position: absolute;
-  width: 15rem;
-  height: 10rem;
-  left: 10rem;
-  top: 1rem;
-  align-items: center;
-}
-.heading1{
-  font-style: bold;
-  position: absolute;
-  left: 10rem; 
-  align-items: center;
-  top: 15rem;
-}
-.form{
-  position: absolute;
-  top: 20rem;
-  left: 10rem;
-}
-.user{
-  width: 20rem;
-  height: 2rem;
-  color: white;
-  box-shadow: 3px 2px 1px black;
+.loginformpart1{
+ position: absolute;
+ left: 60rem;
+ top: 23rem;
+ box-shadow: 1px 4px 2px black;
+ 
 }
 .pass{
-  width: 20rem;
-  height: 2rem;
-  color: white;
-  box-shadow: 3px 2px 1px black;
-}
-.button{
   position: absolute;
-  color: rgb(255, 166, 0);
-  width: 8rem;
-  height: 2rem;
- left: 6rem;
- font-family: Arial, Helvetica, sans-serif;
- background-color: rgba(113, 170, 146, 0.932);
- border-radius: 2rem;
- box-shadow: 5px 5px 3px white;
+ left: 60rem;
+ top: 28rem;
+background: cover;
+box-shadow: 1px 4px 2px black;
+ 
+}
+.label1{
+  position:absolute;
+  left: 60rem;
+  top:21rem;
+  color: black;
+  font-family: bold;
+  font-size: 1.1rem;
+}
+.label2{
+  position:absolute;
+  left: 60rem;
+  top:26rem;
+  color: black;
+  font-family: bold;
+  font-size: 1.1rem;
+}
+.btn{
+  width: 8%;
+  background-color: rgb(3, 114, 3);
+  border: 2px solid #4caf50;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+  border-radius: 40px;
+  position: absolute;
+  left: 62rem;
+  top: 30rem;
+}
+.photo{
+  position: absolute;
+  width: 70%;
+  left: 3rem;
+  top: 13rem;
 }

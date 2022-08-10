@@ -1,0 +1,31 @@
+[
+    {
+        "Names":" Claudine",
+        "Email":"claudniyigena@gmail.com",
+        "Date":"10 Oct 2020",
+        "Status":"communicated",
+        "Activity":"html",
+        "RecordedBy":"Kamushaba"
+
+
+       
+    },
+    {
+        "Names":" Byiza",
+        "Email":"claudniyigena@gmail.com",
+        "Date":"06 Oct 2020",
+        "Status":"present",
+        "Activity":"js",
+        "RecordedBy":"Kamushaba"
+    },
+    {
+        "Names":" Delice",
+        "Email":"claudniyigena@gmail.com",
+        "Date":"01 Oct 2022",
+        "Status":"absent",
+        "Activity":"node",
+        "RecordedBy":"Kayitare"
+    }
+    
+    
+]

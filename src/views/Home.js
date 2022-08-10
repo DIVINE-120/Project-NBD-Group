@@ -1,60 +1,34 @@
 import React from "react";
 import Logo from "../assets/favicon.png";
-import photo from "../assets/img/shecancode.webp";
-import pho from "../assets/img/ty.jpg";
+import photo from "../assets/img/home.jpg";
+
 import "../components/navbar.css";
-import {
-  DesktopOutlined,
-  ReadOutlined,
-  UserSwitchOutlined,
-} from "@ant-design/icons";
+
+
 const Home = () => {
   return (
     <>
-    <div className="footer"></div>
-      <div className="byiza">
-        <img src={Logo} alt="logo" className="logo-img" />
-        <div className="divine">
-          <ul className="nav-links">
-            <li>
-              <a href="home" className="nav-link">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="aboutus" className="nav-link">
-                ContactUs
-              </a>
-            </li>
-            <li>
-              <a href="Regulation" className="nav-link">
-                Regulation
-              </a>
-            </li>
-            <li>
-              <a href="Attandance" className="nav-link">
-                Attendance
-              </a>
-            </li>
-            <li>
-              <a href="Registration" className="nav-link">
-                Registration
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="divto">
-        <img src={photo} alt="logo" className="watching" />
-      </div>
    <div className="loginform">
-   <img src={Logo} alt="logo" className="logoform" />
-   <h1 className="heading1">STUDENT LOGIN</h1>
-   <form action="" method="" className="form">
-    <input type="text" name="username " placeholder="write your Username here!!" required className="user"/><br></br><br></br><br></br>
-    <input type="password" name="password " className="pass" placeholder="write your password here!!"/><br></br><br></br><br></br>
-     <button type="button" className="button">LOGIN</button>
-   </form>
+   <img src={Logo} alt="logo" className="logo-img" />
+  
+  
+   <h1 className="h1">Student login</h1>   
+   </div>
+   <div className="form1"> 
+   <img src={photo} alt="logo" className="photo"/>
+   </div>
+   <label className="label1">Email:</label>
+   <div className="loginformpart1" >
+   
+<input type="text" name="username" placeholder="Email"></input>
+</div>
+<label className="label2">PassWord:</label>
+<div className="pass">
+  
+<input type="password" name="password" ></input>
+   </div>
+   <div className="button">
+   <input class="btn" type="button" name="" value="Sign In"/>
    </div>
     </>
   );
