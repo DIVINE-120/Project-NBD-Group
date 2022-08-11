@@ -13,15 +13,11 @@ import {
   RightOutlined,
   DownOutlined,
 } from "@ant-design/icons";
-import {Calendar} from 'antd';
-const SecondContent =()=>{
-    const onPanelChange = (value,mode)=>{
-        console.log(value.format('YYY-MM-DD'),mode);
 
-    };
-    return<Calendar onPanelChange={onPanelChange} size = "small"/>
-}
+import {useEffect,useState } from "react";
+
 const User = () => {
+
   return (
     <>
       <div className="container">
@@ -79,23 +75,28 @@ const User = () => {
               </a>
             </li>
           </ul>
+          <img src={byiza} alt="byiza" className="photo1" />
         </div>
         <div className="main">
-          <div className="user">
-            <img src={byiza} alt="byiza" className="photo1" />
-          </div>
+        <div className="user">
+       
+        </div>
+         
+      
+          
         </div>
         {/* background all imformation */}
+       
         <div className="user2">
-          <img src={by} alt="db" className="photo2" />
+        <img src={by} alt="db" className="photo2" />
         </div>
-      </div>
+    
       <div className="details">
         <div className="recentOrders">
           <div className="cardHeader">
             <h2>Attendance records</h2>
-            <a href="" className="bb">
-              {" "}
+            <a href="onClick={scrollx}" className="bb">
+              
               see All
               <RightOutlined />
             </a>
@@ -120,12 +121,17 @@ const User = () => {
                 <td>{data.Names}</td>
                 <td>{data.Email}</td>
                 <td>{data.Date}</td>
-                <td>{data.Status}</td>
+                <td  className="{data.Status}"
+              style={{
+                backgroundColor:
+                ((data.Status ==='communicated'&& 'yellow')||
+                (data.  Status ==='absent'&& 'red')||
+                (data.Status ==='present'&& 'green'))
+              }}>{data.Status}
+               </td>
                 <td>{data.Activity}</td>
                 <td>{data.RecordedBy}</td>
 
-               
-               
               </tr>
     ))
     
@@ -157,9 +163,18 @@ const User = () => {
                   <div className="calendto">
                     <input type="date" id="date" name="date" className="too" />
                   </div>
+                
+            
                   <a href="" className="dayd">
-                    All Days
+                    All Days 
+
+               
+
+
+
                   </a>
+                  
+                
                   <a href="" className="absentd">
                     Absent Days
                   </a>
@@ -171,7 +186,7 @@ const User = () => {
             </thead>
           </table>
         </div>
-      </div>
+      </div>  </div>
     </>
   );
 };
