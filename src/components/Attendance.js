@@ -1,7 +1,7 @@
 import react from "react";
 import "./Attendance.css";
 import userData from "../assets/json/Attendance.json";
-import {Form,Select} from "antd"
+import {Form,Select} from "antd";
 const Attendance = () => {
   return (
     <>

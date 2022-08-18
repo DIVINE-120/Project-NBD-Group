@@ -1,5 +1,5 @@
 import React from "react";
-import "./User.css";
+import "./Dashboards.css";
 import byiza from "../assets/favicon.png";
 import by from "../assets/img/byiza.jpeg";
 import userData from "../assets/json/user.json";
@@ -18,8 +18,7 @@ import {
 
 import {useEffect,useState } from "react";
 
-
-const User = () => {
+const Dashboards = () => {
 
   return (
     <>
@@ -27,9 +26,9 @@ const User = () => {
         <div className="navigation">
           <ul>
             <li>
-              <a href="Dashboards">
+              <a href="User">
                 <span className="icon">
-               
+                  <a href=""></a>
                   <DashboardOutlined />
                 </span>
                 <span className="icon">Dashboard</span>
@@ -171,4 +170,4 @@ const User = () => {
     </>
   );
 };
-export default User;
+export default Dashboards;
