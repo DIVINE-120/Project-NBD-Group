@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-size:'ubuntu', sans-serif;
+}
+.question{
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    left:8rem;
+    top: 5rem;
+   border: 1px;
+    background: white; 
+    border: 1px solid white;
+  }
+  .notice{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    left:0;
+    top: 0;
+   border: 1px;
+    background: rgb(130, 193, 252); 
+  }
+  .question1{
+    width: 68%;
+    height: 100vh;
+    position: absolute;
+    left:12rem;
+    top: 10rem;
+   
+   border: 1px solid  rgb(130, 193, 252);
+    
+  }
+.submit{
+    width: 12%;
+  background-color:rgb(130, 193, 252) ;
+  border: 2px solid rgb(130, 193, 252);
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+  border-radius: 40px;
+  position: absolute;
+  left: 30rem;
+  top: 23rem;
+}
+.announce{
+    position: absolute;
+    top: 1rem;
+    left: 25rem;
+    color:white;
+    font-style: bold;
+    
+}

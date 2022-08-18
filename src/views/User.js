@@ -3,6 +3,8 @@ import "./User.css";
 import byiza from "../assets/favicon.png";
 import by from "../assets/img/byiza.jpeg";
 import userData from "../assets/json/user.json";
+import 'antd/dist/antd.css';
+import { Pagination } from 'antd';
 import {
   SettingFilled,
   LogoutOutlined,
@@ -33,20 +35,20 @@ const User = () => {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="permission">
                 <span className="icon">
-                  {" "}
+                  
                   <AppstoreOutlined />
                 </span>
                 <span className="icon">Permission</span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="Attendance">
                 <span className="icon">
                   <NotificationOutlined />
                 </span>
-                <span className="icon">Notification</span>
+                <span className="icon">Attendance</span>
               </a>
             </li>
             <li>
@@ -95,11 +97,7 @@ const User = () => {
         <div className="recentOrders">
           <div className="cardHeader">
             <h2>Attendance records</h2>
-            <a href="onClick={scrollx}" className="bb">
-              
-              see All
-              <RightOutlined />
-            </a>
+            
           </div>
           <table>
             <thead>
@@ -125,7 +123,7 @@ const User = () => {
               style={{
                 backgroundColor:
                 ((data.Status ==='communicated'&& 'yellow')||
-                (data.  Status ==='absent'&& 'red')||
+                (data.Status ==='absent'&& 'red')||
                 (data.Status ==='present'&& 'green'))
               }}>{data.Status}
                </td>
@@ -149,28 +147,10 @@ const User = () => {
         <h4 className="heading4"></h4>
       </div>
 
-      <div className="line">
-        <div className="ored">
-          <table>
-            <thead>
-              <tr>
-                <td>
-                  <h3 className="from">From</h3>
-                  <div className="calendfrom">
-                    <input type="date" id="date" name="date" className="date" />
-                  </div>
-                  <h3 className="to">To</h3>
-                  <div className="calendto">
-                    <input type="date" id="date" name="date" className="too" />
-                  </div>
-                
-            
+                  
+             
                   <a href="" className="dayd">
-                    All Days 
-
-               
-
-
+                    All Days
 
                   </a>
                   
@@ -181,12 +161,12 @@ const User = () => {
                   <a href="" className="communicatedd">
                     Communicated Days
                   </a>
-                </td>
-              </tr>
-            </thead>
-          </table>
-        </div>
-      </div>  </div>
+                  <h3 className="to">Date:</h3>
+                  <div className="calendto">
+                    <input type="date" id="date" name="date" className="too" />
+                  </div>
+       </div>
+      <Pagination defaultCurrent={1} total={50}  style={{marginLeft:"60rem",paddingTop:"8rem"}}/>
     </>
   );
 };

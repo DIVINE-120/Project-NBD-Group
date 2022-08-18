@@ -24,13 +24,7 @@
   box-shadow: 2px 1px 13px black;
   background:white; 
 }
-h1{
-  position: absolute;
-  top: 17rem;
-  left: 18rem;
-  font-style: bold;
-  color: black;
-}
+
 .form1{
   width: 50%;
   height: 100vh;
@@ -86,6 +80,12 @@ box-shadow: 1px 4px 2px black;
   top: 30rem;
 }
 .photo{
+  position: absolute;
+  width: 70%;
+  left: 3rem;
+  top: 13rem;
+}
+.hug{
   position: absolute;
   width: 70%;
   left: 3rem;

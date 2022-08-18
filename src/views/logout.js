@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../assets/favicon.png";
 import photo from "../assets/img/home.jpg";
 
-import "../components/navbar.css";
+import "./navbar.css";
 
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
    <img src={Logo} alt="logo" className="logo-img" />
   
   
-   <h1 className="h1">Student login</h1>   
+   
    </div>
    <div className="form1"> 
    <img src={photo} alt="logo" className="photo"/>

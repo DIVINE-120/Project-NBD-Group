@@ -167,20 +167,16 @@ body{
     object-fit: cover; 
 
 } 
- .bb{
-    color: rgb(202, 198, 198);
-    
-    
-}
+
   .details{
     position: absolute;
-    width:100% ;
+    width:70% ;
     padding: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
-    margin-top: 15rem;
-    margin-left: 21rem;
+    margin-top: 4rem;
+    margin-left: 14rem;
 }  
  .details .recentOrder{
     position: absolute;
@@ -201,6 +197,8 @@ align-items: flex-start;
 .cardHeader h2{
     font-weight: 600;
     color: rgb(202, 198, 198);
+    padding-left: 7rem;
+    padding-top: 2rem;
 
 }
 .details table{
@@ -213,7 +211,7 @@ align-items: flex-start;
     font-weight: 600;
     font-style: bold;
     color: black;
-    background-color: rgb(204, 231, 253);
+    background-color: rgb(75, 161, 231);
 } 
 /* lines here */
 
@@ -229,7 +227,7 @@ align-items: flex-start;
 }
     .details .recentOrders table tbody tr:hover
     { background: var(--blue);
-        color: var(--white);
+        color: var(--green);
 
     }
     .details .recentOrders table tr td{
@@ -249,50 +247,7 @@ align-items: flex-start;
     {
         text-align: center;
     }
-    /* .status.present
-    {
-        padding: 2px 4px;
-        background: rgb(8, 100, 5);
-        color: var(black);
-        border-radius: 4px;
-        font-size: 14px;
-        font-weight: 500;
-    }
-    .status.absent
-    {
-        padding: 2px 4px;
-        background: red;
-        color: var(--black);
-        border-radius: 4px;
-        font-size: 14px;
-        font-weight: 500;
-    }
-    .status.communicated
-    {
-        padding: 2px 4px;
-        background: rgb(182, 179, 15);
-        color: var(--white);
-        border-radius: 4px;
-        font-size: 14px;
-        font-weight: 500;
-    }
-    .payment.status.clam
-    { padding: 2px 4px;
-        background: rgb(225, 228, 221);
-        color: rgb(21, 184, 21);
-        border-radius: 4px;
-        font-size: 14px;
-        font-weight: 500;
-
-    }
-    .invoice.NYCTRANSAPORT-pdf{
-
-        padding: 2px 4px;
-        color: rgb(14, 114, 14);
-        border-radius: 4px;
-        font-size: 14px;
-        font-weight: 500;
-    }   */
+   
     .heading1{
         position: absolute;
         top: 1rem;
@@ -325,13 +280,7 @@ align-items: flex-start;
      
     
      
- .line .ored table tr
-{
-    color: var(black);
-    border-top: 1px solid rgb(0, 0, 0, 1);
-  margin-bottom: 2rem;
-  width: 4%;
-} 
+
  .dayd{
     color: rgb(202, 198, 198);
     position: absolute;
@@ -352,51 +301,28 @@ align-items: flex-start;
     left: 44rem;
    
 }
-.from{
-    color: rgb(202, 198, 198);
-    position: absolute;
-    top: 8rem;
-    left: 22rem;
-}
-/* .calendfrom{
-    position: absolute;
-    width: 20%;
-    height: 6%;
-    background-color:white;
-    left: 25rem;
-    top: 7.5rem;
-    border-radius: 5rem;
-} */
+
  .to{
     color: rgb(202, 198, 198);
     position: absolute;
-    top: 8rem;
+    top: 12rem;
     left: 58rem;
 } 
-/* .calendto{
-    position: absolute;
-    width: 20%;
-    height: 6%;
-    background-color:white;
-    left: 62rem;
-    top: 7.5rem;
-    border-radius:5rem;
-}  */
+
 .date{
     position: absolute;
-    top: 8rem;
+    top: 12rem;
     left: 27rem;
     width: 18%;
-    border-radius: 5rem;
+    
     background: white;
 
 }
 .too{
     position: absolute;
-    top: 8rem;
+    top: 12rem;
     left: 61rem;
     width: 18%;
-    border-radius: 5rem;
     background: white;
 
 }
