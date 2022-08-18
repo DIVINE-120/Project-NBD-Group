@@ -10,7 +10,6 @@ const Permission =() =>{
 
 <TextArea className="question1"></TextArea>
 
-
 </div>
 <input class="submit" type="button" name="" value="Submit"/>
 </div>
