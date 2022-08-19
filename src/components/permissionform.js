@@ -7,7 +7,10 @@ const Permission =() =>{
 <div className="question">
 <div className="notice">
     <h1 className="announce">Announce_Something</h1>
-
+    <input type="date" id="date" name="date" className="datepermission" />
+    <div className="email">
+    <input type="text" name="username" placeholder="Email"></input>
+    </div>
 <TextArea className="question1"></TextArea>
 
 </div>
