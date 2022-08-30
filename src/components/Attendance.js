@@ -1,13 +1,21 @@
-import react from "react";
+import React,{useState} from "react";
 import "./Attendance.css";
 import userData from "../assets/json/Attendance.json";
-import {Form,Select} from "antd";
+import {Form,Select,Modal, notification,Space} from "antd";
+import AddStudents from "../components/addStudent"
+
 const Attendance = () => {
+  const [visibleDrawer, setVisibleDrawer] = useState(false);
+  const [userSelected, setuserSelected] = useState({});
+  const [visibleModal, setVisibleModal] = useState(false);
   return (
     <>
       <h1> Take Attendance </h1>
 
       <div className="date1">
+        <div className="add">
+        <a href="/AddStudents">ADD STUDENTS</a>
+        </div>
         <h5 className="selectdateAttendance">Date:</h5>
         <input type="date" id="date" name="date" className="dateattendance" />
         
@@ -33,9 +41,11 @@ const Attendance = () => {
               <td> No</td>
               <td>Names</td>
               <td>Email</td>
+              <td>Status</td>
               <td>
                 <label for="vehicle2">Attendance</label>
               </td>
+              <td>Delete</td>
             </tr>
           </thead>
           <tbody>
@@ -44,7 +54,7 @@ const Attendance = () => {
                 <td>{index.No}</td>
                 <td>{index.Names}</td>
                 <td>{index.Email}</td>
-
+                <td> {index.Status}</td>
                 <td>
                   {index.Attendance}
                   <input
@@ -54,9 +64,12 @@ const Attendance = () => {
                     value="Boat"
                   />
                 </td>
+               
+                
               </tr>
             ))}
           </tbody>
+          
         </table>
         <input class="save" type="button" name="" value="Save"/>
       </div>
