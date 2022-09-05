@@ -7,7 +7,6 @@ import Logout from "../views/logout"
 import Attendance from "../components/Attendance"
 import Permission from "../components/permission";
 import Dashboards from "../components/Dashboards";
-import Lecture from "../components/lecture";
 import Register from "../components/addStudent"
 
 const index =() =>{
@@ -24,7 +23,7 @@ const index =() =>{
             <Route exact path="/Attendance" element={<Attendance/>}></Route>
             <Route exact path="/Permission" element={<Permission/>}></Route>
             <Route exact path="/Dashboards" element={<Dashboards/>}></Route>
-            <Route exact path="/lecture" element={<Lecture/>}></Route>
+           
         </Routes>
         
         </>

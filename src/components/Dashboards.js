@@ -1,8 +1,8 @@
-import React from "react";
+import React, {useEffect,useState }  from "react";
 import "./Dashboards.css";
 import byiza from "../assets/favicon.png";
 import by from "../assets/img/byiza.jpeg";
-import userData from "../assets/json/user.json";
+// import userData from "../assets/json/user.json";
 import 'antd/dist/antd.css';
 import { Pagination } from 'antd';
 import {
@@ -16,19 +16,25 @@ import {
   DownOutlined,
 } from "@ant-design/icons";
 
-import {useEffect,useState } from "react";
 
-const Dashboards = () => {
+import Userservices from "../services/userservices"
 
+
+const User = () => {
+
+const [userData,setuserData] = useState([]);
+  useEffect(()=> {
+    Userservices.getAlluser().then((res)=>{setuserData(res?.data)});
+    },[]);
   return (
     <>
       <div className="container">
         <div className="navigation">
           <ul>
             <li>
-              <a href="User">
+              <a href="Dashboards">
                 <span className="icon">
-                  <a href=""></a>
+               
                   <DashboardOutlined />
                 </span>
                 <span className="icon">Dashboard</span>
@@ -56,7 +62,7 @@ const Dashboards = () => {
                 <span className="icon">
                   <SettingFilled />
                 </span>
-                <span className="icon">Settings</span>
+                <span className="icon">setting</span>
               </a>
             </li>
             <li>
@@ -104,7 +110,7 @@ const Dashboards = () => {
               <tr>
               <td>Names</td>
                 <td>Email</td>
-                <td>Date</td>
+                <td>phone</td>
                 <td>Status</td>
                 <td>Activity</td>
                 <td>RecordedBy</td>
@@ -113,27 +119,26 @@ const Dashboards = () => {
             </thead>
             <tbody>
 
-{
-    userData.map((data)=>(
+ {userData.map((user)=>(
          <tr>
-                <td>{data.Names}</td>
-                <td>{data.Email}</td>
-                <td>{data.Date}</td>
-                <td  className="{data.Status}"
+                <td>{user?.names}</td>
+                <td>{user?.email}</td>
+                <td>{user?.phone} </td>
+                <td  className="{user.status}"
               style={{
                 backgroundColor:
-                ((data.Status ==='communicated'&& 'yellow')||
-                (data.Status ==='absent'&& 'red')||
-                (data.Status ==='present'&& 'green'))
-              }}>{data.Status}
+                ((user?.status ==='communicated'&& 'yellow')||
+                (user?.status ==='absent'&& 'red')||
+                (user?.status ==='present'&& 'green'))
+              }}>{user?.status}
                </td>
-                <td>{data.Activity}</td>
-                <td>{data.RecordedBy}</td>
+                <td>{user?.activity}</td>
+                <td>{user?.dateAt}</td>
 
               </tr>
     ))
     
-}
+} 
              
 
             </tbody>
@@ -170,4 +175,4 @@ const Dashboards = () => {
     </>
   );
 };
-export default Dashboards;
+export default User;

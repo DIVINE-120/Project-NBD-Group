@@ -7,8 +7,12 @@ import {
     Input,
     Select,
     DatePicker,
+    Space,
   } from 'antd';
   const { Option } = Select;
+  const onChange = (date,dateString)=> {
+    console.log(date,dateString)
+  }
 
   const config = {
     rules: [
@@ -55,8 +59,11 @@ import {
     );
     return (
      <>
+          
+      <Card style={{width:"60%",left:"25rem",top:"30px",height:"90%"}}>
+   
       <Form name="validate_other" {...formItemLayout} onFinish={onFinish}>
-     <Card style={{width:"50%",left:"25rem",top:"30px"}}>
+    
       <div style={{marginLeft:"2rem",marginTop:"30px"}}>
      <Form.Item label="Names">
          <Input style={{width:"90%"}}/>
@@ -112,16 +119,17 @@ import {
             <Option value="other">Other</Option>
           </Select>
         </Form.Item>      
-      {/* <Form.Item name="date-picker" label="Date" {...config}>
-        {/* <DatePicker style={{width:"90%"}} />
-      </Form.Item> */} 
-          <Button  htmlType="submit" style={{left:"15rem"}}>
+        <p style={{marginLeft:"7rem"}}>Date</p>
+      <Space direction="vertical">
+        <DatePicker onChange={onChange} style={{width:"90%",marginLeft:"10.5rem",bottom:"40px"}}/>
+      </Space>
+          <Button  htmlType="submit" style={{left:"2rem",top:"1rem"}}>
             Register
           </Button>
           
           </div>
-          </Card>
-          </Form>
+         
+          </Form> </Card>
           </>
           
     );

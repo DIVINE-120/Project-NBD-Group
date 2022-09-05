@@ -13,8 +13,12 @@ const Attendance = () => {
       <h1> Take Attendance </h1>
 
       <div className="date1">
-        <div className="add">
-        <a href="/AddStudents">ADD STUDENTS</a>
+        <div className="menu-bar">
+          <ul>
+         
+          <li><a href="/AddStudents">ADD STUDENTS</a> </li>
+       
+        </ul>
         </div>
         <h5 className="selectdateAttendance">Date:</h5>
         <input type="date" id="date" name="date" className="dateattendance" />
@@ -45,7 +49,7 @@ const Attendance = () => {
               <td>
                 <label for="vehicle2">Attendance</label>
               </td>
-              <td>Delete</td>
+             
             </tr>
           </thead>
           <tbody>
@@ -64,6 +68,7 @@ const Attendance = () => {
                     value="Boat"
                   />
                 </td>
+               
                
                 
               </tr>

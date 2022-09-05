@@ -58,11 +58,11 @@ const [userData,setuserData] = useState([]);
               </a>
             </li>
             <li>
-              <a href="lecture">
+              <a href="#">
                 <span className="icon">
                   <SettingFilled />
                 </span>
-                <span className="icon">Lecture</span>
+                <span className="icon">setting</span>
               </a>
             </li>
             <li>
